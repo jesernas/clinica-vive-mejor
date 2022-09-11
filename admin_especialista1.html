@@ -53,48 +53,82 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-sm-9">
                         <br><br>
                         <div class="card-title">
-                            <h1>ESPECIALIDAD</h1>
+                            <h1>CREAR ESPECIALISTA</h1>
                             <br>                                                                                                        
                         </div>
-                        <br><br>
-                        <div>
-                            <a class="btn btn-primary btn-sm" href="admin_especialidad2.html">NUEVA ESPECIALIDAD</a>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
+                        
 
-                        <div class="row">
-                            <table class="table table-hover">
-                                <tr class="table-primary">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">OPCIONES</th>
-                                            <th scope="col">ESPECIALIDAD</th>
-                                            <th scope="col">PROFESIONAL</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">
-                                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">OPCION</button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">ELIMINAR</a></li>
-                                                    <li><a class="dropdown-item" href="#">EDITAR</a></li>
-                                                </ul>
-                                            </th>
-                                            <td>medicina general</td>
-                                            <td>Jully</td>
+                        <form action = "#">
 
-                                            </tr>
-                                    </tbody>
-                             </tr>
-                            </table>
-                        </div> 
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <label for=""> TIPO DE DOCUMENTO</label>
+                                    <select name="cedula"> 
+                                        <option value=""></option>
+                                        <option value="C.C">C.C</option>
+                                        <option value="C.E">C.E</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-7">
+                                    <label for=""> NUMERO DE DOCUMENTO</label>
+                                    <input type="number" required placeholder="numero de cedula">
+                                </div> <br><br>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label for="form-label" class="form-label">PRIMER NOMBRE</label> <br>
+                                    <input type="text"  class="form-control" required placeholder="Nombres de Profesional">    
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="form-label" class="form-label">SEGUNDO NOMBRE</label> <br>
+                                    <input type="text"  class="form-control" placeholder="Nombres de Profesional">    
+                                </div>  
+                            </div> 
+                            <br>
 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <label for="form-label" class="form-label">PRIMER APELLIDO</label> <br>
+                                    <input type="text"  class="form-control" required placeholder="Apellidos de Profesional">    
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="form-label" class="form-label">SEGUNDO APELLIDO</label> <br>
+                                    <input type="text"  class="form-control" placeholder="Apellidos de Profesional">    
+                                </div>  
+                            </div> 
+                            <br>
+                            <div class="row">
+
+                                <div class="col-lg-6">
+                                    <label for="">ESPECIALIDAD</label>
+                                    <select name="especialidad" class="form-control" required> 
+                                        <option value=""></option>
+                                        <option value="Medicina General">Medicina General</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+
+                                </div> 
+
+
+
+                            
+                            <br><br><br><br>
+                            <div class="row">
+                                <div class="col-sm-7">
+                
+                                </div>
+                                <div class="col-sm-5">
+                                    <button class="btn btn-lg btn-primary" type="submit">GUARDAR</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
         </section>
         <!-- Footer-->
         <footer class="footer bg-light">
