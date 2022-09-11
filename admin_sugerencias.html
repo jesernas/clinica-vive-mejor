@@ -57,78 +57,66 @@
                     <div class="col-sm-9">
                         <br><br>
                         <div class="card-title">
-                            <h1>CREAR ESPECIALISTA</h1>
+                            <h1>SUGERENCIAS</h1>
                             <br>                                                                                                        
                         </div>
                         
 
-                        <form action = "#">
-
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <label for=""> TIPO DE DOCUMENTO</label>
-                                    <select name="cedula"> 
-                                        <option value=""></option>
-                                        <option value="C.C">C.C</option>
-                                        <option value="C.E">C.E</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-7">
-                                    <label for=""> NUMERO DE DOCUMENTO</label>
-                                    <input type="number" required placeholder="numero de cedula">
-                                </div> <br><br>
+                        <div class="row">
+                    
+                            <div class="col-lg-6">
+                                <label for="" class="form-label">Desde:</label>
+                                <input type="date" class="form-control" id="">
                             </div>
-                            <br><br>
+    
+                            <div class="col-lg-6">
+                                <label for="" class="form-label">Hasta:</label>
+                                <input type="date" class="form-control" id="">
+                            </div>
+                            
+                        </div>
+                        <br>
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <label for="form-label" class="form-label">PRIMER NOMBRE</label> <br>
-                                    <input type="text"  class="form-control" required placeholder="Nombres de Profesional">    
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="form-label" class="form-label">SEGUNDO NOMBRE</label> <br>
-                                    <input type="text"  class="form-control" placeholder="Nombres de Profesional">    
-                                </div>  
-                            </div> 
-                            <br>
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <label for="form-label" class="form-label">PRIMER APELLIDO</label> <br>
-                                    <input type="text"  class="form-control" required placeholder="Apellidos de Profesional">    
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="form-label" class="form-label">SEGUNDO APELLIDO</label> <br>
-                                    <input type="text"  class="form-control"   placeholder="Apellidos de Profesional">    
-                                </div>  
-                            </div> 
-                            <br>
-                            <div class="row">
-
-                                <div class="col-lg-6">
-                                    <label for="">ESPECIALIDAD</label>
-                                    <select name="especialidad" class="form-control" required> 
-                                        <option value=""></option>
-                                        <option value="Medicina General">Medicina General</option>
-                                    </select>
+                                <div class="col-sm-6">
+                                    <button class="btn btn-sm btn-primary" type="submit">BUSCAR</button>   
                                 </div>
                                 <div class="col-sm-6">
-
-                                </div> 
-
-
-
-                            
-                            <br><br><br><br>
-                            <div class="row">
-                                <div class="col-sm-7">
-                
-                                </div>
-                                <div class="col-sm-5">
-                                    <button class="btn btn-lg btn-primary" type="submit">GUARDAR</button>
+                                    
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        
+                        <br><br>
+    
+                        <div class="row">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">Opciones</th>
+                                      <th scope="col">Sugerencias</th>
+                                      <th scope="col">Descripcion</th>
+                                      <th scope="col">fecha</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">OPCIONES</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">RESPONDER</a></li>
+                                                <li><a class="dropdown-item" href="#">ELIMINAR</a></li>
+                                            </ul>
+                                        </th>
+                                        <td>FELICITACIONES</td>
+                                        <td> LA ATENCION HA SIDO MUY BUENA PUDE PONER MIS CITAS A TIEMPO</td>
+                                        <td>20/08/2022</td>
+
+                                        </tr>
+                                </tbody>
+    
+                                
+                            </table>
+                        </div>    
+                        
         </section>
         <!-- Footer-->
         <footer class="footer bg-light">
