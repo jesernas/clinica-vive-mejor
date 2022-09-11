@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clínica Vive Mejor</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <img src="assets/img/logocli.png">
+
+                <h3><b>ADMINISTRADOR</b></h3>
+            </div>
+        </nav>
+
+        <!-- Icons Grid-->
+        <section>
+            <div class="container">
+                <div class="row g-3 mt-3">
+                   <div class="col-sm-3">
+                        <div class="row">
+                            <p class="lead mb-0">
+                                <b> GESTION CITAS</b> 
+                                <br>                                                               
+                                <b>HISTORIAS CLINICAS</b>                                                                                             
+                                <b>__________________</b>
+                            </p>
+                            <br>
+                            <br>                            
+                            <div class="d-grid gap-2">
+                                <a class="btn btn-primary" href="#signup">CITAS</a>                                                         
+                                <a class="btn btn-primary" href="#signup">SUGERENCIAS</a>                                                                                                      
+                                <a class="btn btn-primary" href="#signup">ESPECIALISTAS</a>                                   
+                                <a class="btn btn-primary" href="#signup">ESPECIALIDADES</a>                                                               
+                                <a class="btn btn-primary" href="#signup">PACIENTES</a>                                                                             
+                                <a class="btn btn-primary" href="#signup">USUARIOS</a>                                                            
+                                <a class="btn btn-primary" href="#signup">EPS</a>                                   
+                                <a class="btn btn-primary" href="#signup">HISTORIAS CLINICAS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="card-title">
+                            <h1>INFORMACIÓN PERSONAL.</h1>                                                                                                                                                              
+                        </div>                    
+                        <form class="row g-3 mt-3">
+                            <div class="col-4">
+                                <label for="tipoDcto" class="form-label">Tipo de Documento.</label>
+                                    <select class="form-select" id="tipoDcto">
+                                    <option></option>
+                                    <option>Cedula Colombiana.</option>
+                                    <option>Tarjeta identidad.</option>
+                                    <option>No Pasaporte.</option>
+                                    <option>Cedula de Extranjeria.</option>
+                                    </select>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="segNombre" class="form-label">Numero de Documento.</label>
+                                <input type="nombre" class="form-control" id="segnombre" placeholder="Escribir segundo nombre">
+                            </div>
+
+                            <div class="col-4"> 
+                                <div class="col-sm-9">
+                                    <b>Fecha de nacimineto</b>
+                                    <br>
+                                    <br>
+                                    <input type="date" name="fecha_cita">
+                                </div>      
+                            </div>
+
+                            <div class="col-3">
+                                <label for="primerApell" class="form-label">Primer Nombre.</label>
+                                <input type="apellido" class="form-control" id="primerApell" placeholder="Escribir primer apellido">
+                            </div>
+
+                            <div class="col-3">
+                                <label for="segApell" class="form-label">Segundo Nombre.</label>
+                                <input type="apellido" class="form-control" id="segApell" placeholder="Escribir segundo nombre">
+                            </div>
+
+                            <div class="col-3">
+                                <label for="segApell" class="form-label">Primer Apellido.</label>
+                                <input type="apellido" class="form-control" id="segApell" placeholder="Escribir segundo nombre">
+                            </div>
+
+                            <div class="col-3">
+                                <label for="numDcto" class="form-label">Segundo Apellido.</label>
+                                <input type="dcto" class="form-control" id="numDcto" placeholder="Escribir numero de Documento">
+                            </div>
+                            
+                            <div class="col-6">
+                                <label for="segApell" class="form-label">EMAIL.</label>
+                                <input type="apellido" class="form-control" id="segApell" placeholder="Escribir segundo nombre">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="numDcto" class="form-label">CELULAR.</label>
+                                <input type="dcto" class="form-control" id="numDcto" placeholder="Escribir numero de Documento">
+                            </div>
+                            <div class="col-6">
+                                <label for="tipoDcto" class="form-label">PAIS.</label>
+                                    <select class="form-select" id="tipoDcto">
+                                    <option></option>
+                                    <option>Colombia.</option>
+                                    <option>Venezuela.</option>
+                                    <option>España.</option>
+                                    </select>
+                            </div> 
+                            <div class="col-6">
+                                <label for="segApell" class="form-label">CIUDAD.</label>
+                                <input type="apellido" class="form-control" id="segApell" placeholder="Escribir segundo nombre">
+                            </div> 
+
+                            <h1>TIPO DE CITA.</h1> 
+
+                            <div class="col-6">
+                                <label for="tipoDcto" class="form-label">ESPECIALIDAD.</label>
+                                    <select class="form-select" id="tipoDcto">
+                                    <option></option>
+                                    <option>Fisioterapia.</option>
+                                    <option>fisiatria.</option>
+                                    <option>Traumatologia.</option>
+                                    </select>
+                            </div> 
+                            <div class="col-6">
+                                <label for="tipoDcto" class="form-label">ESPECIALISTA.</label>
+                                    <select class="form-select" id="tipoDcto">
+                                    <option></option>
+                                    <option>Jose.</option>
+                                    <option>Juan Carlos.</option>
+                                    <option>Julliy.</option>
+                                    </select>
+                            </div> 
+                            <div class="col-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">EPS.</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">PARTICULAR.</label>
+                                </div>
+                            </div>  
+                            <div class="col-6"> 
+                                <div class="col-sm-9">
+                                    <b>Fecha disponible para agendar</b>
+                                    <br>
+
+                                    <input type="date" name="fecha_cita">
+                                </div>      
+                            </div> 
+                                
+                            <div>
+                                <a class="btn btn-primary btn-sm" href="admin_cita.html">CREAR CITA</a>
+                            </div>                     
+                           <script>                               
+                            $('#datepicker').datepicker({
+                                uiLibrary: 'bootstrap'
+                            });
+                           </script>                                                      
+                        </form>                            
+                    </div> 
+                                                       
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Clínica Vive Mejor 2022. </p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
