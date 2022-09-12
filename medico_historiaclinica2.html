@@ -33,7 +33,7 @@
         <br>
         <section>
             <div class="container">
-                <div class="row">
+                <div class="row g-3 mt-3">
                     <div class="col-sm-3">
                         <div class="row">
                             <center>
@@ -42,14 +42,16 @@
                                     <b>CONSULTAR AGENDA</b> 
                                     <br>                                                               
                                     <b>HISTORIAS CLINICAS</b>                                                                                             
-                                    <b>__________________</b>
+                                    <b>________________________________________</b>
                             </p>
                             </center>
+                            <br>
+                            <br>
                             <br>
                             <br>                            
                             <div class="d-grid gap-2">
                                 <a class="btn btn-primary" href="medico1.html">LISTAR AGENDA</a>                                                                                          
-                                <a class="btn btn-primary" href="#signup">HISTORIAS CLINICAS</a>
+                                <a class="btn btn-primary" href="medico_historiaclinica.html">HISTORIAS CLINICAS</a>
                             </div>
                         </div>
                     </div>
@@ -60,57 +62,51 @@
                         <br>
                         <form class="row g-3 mt-3">
                             <div class="col-6">
-                                <label for="tipoDcto" class="form-label">Tipo de Documento.</label>
-                                    <select class="form-select" id="tipoDcto">
-                                    <option></option>
-                                    <option>Cedula Colombiana.</option>
-                                    <option>Tarjeta identidad.</option>
-                                    <option>No Pasaporte.</option>
-                                    <option>Cedula de Extranjeria.</option>
-                                    </select>
+                                <label for="tipoDcto" class="form-label">Tipo de documento</label>
+                                <input type="dcto" class="form-control" id="tipoDcto" placeholder="Cédula de ciudadanía">
                             </div>
                             <div class="col-6">
                                 <label for="numDcto" class="form-label">Numero de Documento.</label>
-                                <input type="dcto" class="form-control" id="numDcto" placeholder="Escribir numero de Documento">
+                                <input type="dcto" class="form-control" id="numDcto" placeholder="101536874">
                             </div>
                         </form>
                         <form class="row g-3 mt-3">
                             <div class="col-3">
                                 <label for="primerNombre" class="form-label">Primer Nombre</label>
-                                <input type="nombre" class="form-control" id="primernombre" placeholder="Escribir primer nombre">
+                                <input type="nombre" class="form-control" id="primernombre" placeholder="Juan">
                             </div>
                             <div class="col-3">
                                 <label for="segundoNombre" class="form-label">Segundo Nombre</label>
-                                <input type="nombre" class="form-control" id="segundonombre" placeholder="Escribir segundo nombre">
+                                <input type="nombre" class="form-control" id="segundonombre" placeholder="Andres">
                             </div>
                             <div class="col-3">
                                 <label for="primerApellido" class="form-label">Primer Apellido</label>
-                                <input type="apellido" class="form-control" id="primerapellido" placeholder="Escribir primer apellido">
+                                <input type="apellido" class="form-control" id="primerapellido" placeholder="Ramirez">
                             </div>
                             <div class="col-3">
                                 <label for="segundoApellido" class="form-label">Primer Nombre</label>
-                                <input type="apellido" class="form-control" id="segundoapellido" placeholder="Escribir segundo apellido">
+                                <input type="apellido" class="form-control" id="segundoapellido" placeholder="Suarez">
                             </div>
                         </form>
                         <form class="row g-3 mt-3">
                             <div class="col-4">
                                 <label class="form-label"> Fecha de Nacimiento</label>
-                                <div class="col-md-9">
-                                    <input type="date" name="fecha_cita">
-                                </div>                            </div>
+                                <input type="apellido" class="form-control" id="fecha_nac" placeholder="19/11/1990">
+                            </div>
                             <div class="col-4">
                                 <label for="pais" class="form-label">País</label>
-                                <input type="pais" class="form-control" id="pais" placeholder="Escribir pais">
+                                <input type="pais" class="form-control" id="pais" placeholder="Colombia">
                             </div>
                             <div class="col-4">
                                 <label for="ciudad" class="form-label">Ciudad</label>
-                                <input type="ciudad" class="form-control" id="ciudad" placeholder="Escribir ciudad">
+                                <input type="ciudad" class="form-control" id="ciudad" placeholder="Pereira">
                             </div>
                         </form>
+                    
                         <form class="row g-3 mt-3">
                             <div class="col-6">
                                 <label for="exampleInputEmail1" class="form-label">Correo Electronico.</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar email">                                
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="juanpetsa@gmail.com">                                
                             </div>
                             <div class="col-6">
                                 <div class="form-check form-check-inline">
@@ -123,10 +119,33 @@
                                 </div>
                             </div>
                         </form>
+                        <br>
+                        <br>
+                        <div class="card-title">
+                            <H1>INFORMACIÓN CLÍNICA</H1>
+                        </div>
+                        <form class="row g-3 mt-3">
+                            <div class="col-6">
+                                <label for="Dx" class="form-label">Diagnóstico</label>
+                                <input type="Dx" class="form-control" id="Dx" aria-describedby="emailHelp" placeholder="Esclerosis múltiple">                                
+                            </div>
+                            <div class="col-6">
+                            </div>
                         </form>
-                        <br>
-                        <br>
-                        <a class="btn btn-primary btn-sm" href="medico_historiaclinica.html">CREAR</a>
+                        <form class="row g-3 mt-3">
+                            <div class="col-8">
+                                <label for="observaciones_dx" class="form-label">Observaciones</label>
+                                <input type="observaciones_dx" class="form-control" id="observaciones_dx" aria-describedby="emailHelp" placeholder="Dependiente en las actividades de la vida diaria">                                
+                            </div>
+                            <div class="col-4">
+                                <label for="opciones_hc" class="form-label">Opciones</label>
+                                <select class="form-select" id="tipoDcto">
+                                    <option></option>
+                                    <option>Editar</option>
+                                    <option>Guardar</option>
+                                    </select>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
