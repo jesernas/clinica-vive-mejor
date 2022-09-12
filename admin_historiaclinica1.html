@@ -15,77 +15,61 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <img src="assets/img/logocli.png">
-                <h3><b>MEDICO</b></h3>
+
+                <h3><b>ADMINISTRADOR</b></h3>
                 <a class="btn btn-primary" href="index.html">Log out</a>
             </div>
         </nav>
 
         <!-- Icons Grid-->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <section>
             <div class="container">
                 <div class="row g-3 mt-3">
-                    <div class="col-sm-3">
+                   <div class="col-sm-3">
                         <div class="row">
-                            <center>
                             <p class="lead mb-0">
-                                
-                                    <b>CONSULTAR AGENDA</b> 
-                                    <br>                                                               
-                                    <b>HISTORIAS CLINICAS</b>                                                                                             
-                                    <b>__________________________________</b>
-                                </p>
-                            </center>
+                                <b> GESTION CITAS</b> 
+                                <br>                                                               
+                                <b>HISTORIAS CLINICAS</b>                                                                                             
+                                <b>__________________________________</b>
+                            </p>
                             <br>
                             <br>
                             <br>
-                            <br>                            
+                            <br>                              
                             <div class="d-grid gap-2">
-                                <a class="btn btn-primary" href="medico1.html">LISTAR AGENDA</a>                                                                                          
-                                <a class="btn btn-primary" href="medico_historiaclinica.html">HISTORIAS CLINICAS</a>
+                                <a class="btn btn-primary" href="admin_cita.html">CITAS</a>                                                         
+                                <a class="btn btn-primary" href="admin_sugerencias.html">SUGERENCIAS</a>                                                                                                      
+                                <a class="btn btn-primary" href="admin_especialista1.html">ESPECIALISTAS</a>                                   
+                                <a class="btn btn-primary" href="admin_especialidad1.html">ESPECIALIDADES</a>                                                               
+                                <a class="btn btn-primary" href="admin_crear_paciente.html">PACIENTES</a>                                                                             
+                                <a class="btn btn-primary" href="admin_crear_usuario1.html">USUARIOS</a>                                                            
+                                <a class="btn btn-primary" href="admin_crear_Eps.html">EPS</a>                                   
+                                <a class="btn btn-primary" href="admin_historiaclinica.html">HISTORIAS CLINICAS</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-9">
                         <div class="card-title">
                             <H1>HISTORIA CLÍNICA</H1>
+                            <br>
+                            <H2>INFORMACIÓN PERSONAL</H2>
                         </div>
                         <br>
                         <form class="row g-3 mt-3">
                             <div class="col-6">
-                                <label for="tipoDcto" class="form-label">Tipo de documento</label>
-                                <input type="dcto" class="form-control" id="tipoDcto" placeholder="Cédula de ciudadanía">
+                                <label for="paciente" class="form-label">Paciente</label>
+                                <input type="paciente" class="form-control" id="paciente" placeholder="Juan Andrés Ramirez Suarez">
                             </div>
                             <div class="col-6">
                                 <label for="numDcto" class="form-label">Numero de Documento.</label>
                                 <input type="dcto" class="form-control" id="numDcto" placeholder="101536874">
-                            </div>
-                        </form>
-                        <form class="row g-3 mt-3">
-                            <div class="col-3">
-                                <label for="primerNombre" class="form-label">Primer Nombre</label>
-                                <input type="nombre" class="form-control" id="primernombre" placeholder="Juan">
-                            </div>
-                            <div class="col-3">
-                                <label for="segundoNombre" class="form-label">Segundo Nombre</label>
-                                <input type="nombre" class="form-control" id="segundonombre" placeholder="Andres">
-                            </div>
-                            <div class="col-3">
-                                <label for="primerApellido" class="form-label">Primer Apellido</label>
-                                <input type="apellido" class="form-control" id="primerapellido" placeholder="Ramirez">
-                            </div>
-                            <div class="col-3">
-                                <label for="segundoApellido" class="form-label">Primer Nombre</label>
-                                <input type="apellido" class="form-control" id="segundoapellido" placeholder="Suarez">
                             </div>
                         </form>
                         <form class="row g-3 mt-3">
@@ -133,22 +117,14 @@
                             </div>
                         </form>
                         <form class="row g-3 mt-3">
-                            <div class="col-8">
+                            <div class="col-12">
                                 <label for="observaciones_dx" class="form-label">Observaciones</label>
                                 <input type="observaciones_dx" class="form-control" id="observaciones_dx" aria-describedby="emailHelp" placeholder="Dependiente en las actividades de la vida diaria">                                
                             </div>
-                            <div class="col-4">
-                                <label for="opciones_hc" class="form-label">Opciones</label>
-                                <select class="form-select" id="tipoDcto">
-                                    <option></option>
-                                    <option>Editar</option>
-                                    <option>Guardar</option>
-                                    </select>
-                            </div>
                         </form>
                     </div>
-                </div>
-            </div>
+                </div> 
+            </div>                                           
         </section>
         <!-- Footer-->
         <footer class="footer bg-light">
@@ -182,5 +158,5 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+>>>>>>> ae67f88bf5ce9d9c37d30506ae83c24c7fe5a8a6
     </body>
-</html>
